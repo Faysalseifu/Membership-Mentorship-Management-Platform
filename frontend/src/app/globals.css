@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  /* Base surfaces — stacked like layers of paper */
+  --surface-0: #F5F4F1;   /* page background */
+  --surface-1: #FFFFFF;   /* card level */
+  --surface-2: #FFFFFF;   /* elevated card, modal */
+  --surface-overlay: rgba(255, 255, 255, 0.72); /* frosted glass panels */
+
+  /* Brand */
+  --brand-teal: #0F6E56;  /* primary action, active states */
+  --brand-teal-l: #E1F5EE;  /* teal tints, subtle fills */
+  --brand-amber: #BA7517;  /* secondary accent, warnings */
+  --brand-amber-l: #FAEEDA;
+
+  /* Text */
+  --text-primary: #1A1A18;
+  --text-secondary: #5F5E5A;
+  --text-muted: #A8A69E;
+
+  /* Semantic */
+  --success: #1D9E75;
+  --warning: #EF9F27;
+  --danger: #D85A30;
+  --info: #3B8BD4;
+}
+
+@theme inline {
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-overlay: var(--surface-overlay);
+
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-teal-l: var(--brand-teal-l);
+  --color-brand-amber: var(--brand-amber);
+  --color-brand-amber-l: var(--brand-amber-l);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-info: var(--info);
+
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-xl: 0 24px 80px rgba(0,0,0,0.14), 0 4px 16px rgba(0,0,0,0.06);
+
+  --font-display: var(--font-outfit), sans-serif;
+  --font-sans: var(--font-jakarta), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+}
