@@ -25,6 +25,57 @@
   --info: #3B8BD4;
 }
 
+.dark {
+  /* Base surfaces — dark mode anti-gravity */
+  --surface-0: #121212;   /* page background */
+  --surface-1: #1E1E1E;   /* card level */
+  --surface-2: #282828;   /* elevated card, modal */
+  --surface-overlay: rgba(30, 30, 30, 0.85); /* frosted glass panels */
+
+  /* Brand */
+  --brand-teal: #18A07E;  /* brighter teal for dark mode contrast */
+  --brand-teal-l: rgba(24, 160, 126, 0.15);  /* teal tints, subtle fills */
+  --brand-amber: #E29E2E;  /* secondary accent, warnings */
+  --brand-amber-l: rgba(226, 158, 46, 0.15);
+
+  /* Text */
+  --text-primary: #F5F4F1;
+  --text-secondary: #AFAEA8;
+  --text-muted: #787771;
+
+  /* Semantic */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --info: #3B8BD4;
+}
+
+/* Smart adaptation for hardcoded white/black utility classes in dark mode */
+.dark .bg-white {
+  background-color: var(--surface-1);
+}
+.dark .bg-white\/70 {
+  background-color: rgba(30, 30, 30, 0.75);
+}
+.dark .bg-white\/50 {
+  background-color: rgba(30, 30, 30, 0.5);
+}
+.dark .border-black\/\[0\.04\],
+.dark .border-black\/\[0\.06\],
+.dark .border-black\/\[0\.08\],
+.dark .border-black\/\[0\.1\] {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.dark .bg-black\/\[0\.01\],
+.dark .bg-black\/\[0\.02\],
+.dark .bg-black\/\[0\.03\],
+.dark .bg-black\/\[0\.04\] {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.dark .text-black {
+  color: var(--text-primary);
+}
+
 @theme inline {
   --color-surface-0: var(--surface-0);
   --color-surface-1: var(--surface-1);
