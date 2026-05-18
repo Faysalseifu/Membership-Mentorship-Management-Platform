@@ -13,8 +13,8 @@ export default function MentorMemberDetailsPage({ params }: { params: { id: stri
   // Mock mentee details
   const member = {
     id: params.id,
-    name: "Ahmed Ali",
-    email: "ahmed.ali@example.com",
+    name: "Abdi Ahmed",
+    email: "abdi.ahmed@example.com",
     phone: "+251 911 234 567",
     gender: "male",
     region: "Addis Ababa",

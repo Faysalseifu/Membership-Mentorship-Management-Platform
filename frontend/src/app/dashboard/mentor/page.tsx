@@ -99,7 +99,7 @@ export default function MentorDashboardPage() {
                     Q3
                   </div>
                   <div>
-                    <h4 className="font-semibold text-text-primary text-sm">Quarterly Evaluation Due: Ahmed Ali</h4>
+                    <h4 className="font-semibold text-text-primary text-sm">Quarterly Evaluation Due: Abdi Ahmed</h4>
                     <p className="text-xs text-text-secondary">Level 2 • Last evaluated: July 15, 2026</p>
                     <span className="inline-block mt-1 text-xs text-brand-amber font-medium">Evaluation pending review</span>
                   </div>
@@ -119,7 +119,7 @@ export default function MentorDashboardPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary text-sm">Activity Review: Neighborhood Clean-up</h4>
-                    <p className="text-xs text-text-secondary">Submitted by <span className="font-medium text-text-primary">Sara Bekele</span> • 3 hours ago</p>
+                    <p className="text-xs text-text-secondary">Submitted by <span className="font-medium text-text-primary">Abduse Taye</span> • 3 hours ago</p>
                     <span className="inline-block mt-1 text-xs text-brand-teal font-medium">Requires evidence verification</span>
                   </div>
                 </div>
@@ -150,10 +150,10 @@ export default function MentorDashboardPage() {
 
             <div className="flex flex-col gap-4 flex-1">
               {[
-                { id: "mem_1", name: "Ahmed Ali", level: 2, status: "active" as const, region: "Addis Ababa" },
-                { id: "mem_2", name: "Sara Bekele", level: 2, status: "active" as const, region: "Addis Ababa" },
-                { id: "mem_4", name: "Feven Tefera", level: 1, status: "active" as const, region: "Addis Ababa" },
-                { id: "mem_5", name: "Yosef Mamo", level: 2, status: "inactive" as const, region: "Oromia" },
+                { id: "mem_1", name: "Abdi Ahmed", level: 2, status: "active" as const, region: "Addis Ababa" },
+                { id: "mem_2", name: "Abduse Taye", level: 2, status: "active" as const, region: "Addis Ababa" },
+                { id: "mem_4", name: "Ezadin Muzemil", level: 1, status: "active" as const, region: "Addis Ababa" },
+                { id: "mem_5", name: "Huzayfa Sultan", level: 2, status: "inactive" as const, region: "Oromia" },
               ].map((m) => (
                 <div
                   key={m.id}

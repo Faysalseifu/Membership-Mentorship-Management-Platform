@@ -113,10 +113,10 @@ export default function SuperAdminDashboardPage() {
 
             <div className="flex flex-col gap-4 flex-1">
               {[
-                { id: "log_1", user: "Admin (Sara M)", action: "Approved promotion for Feven Tefera to Level 2", time: "10 mins ago", type: "promo" },
+                { id: "log_1", user: "Admin (Ustaz Musab I)", action: "Approved promotion for Ezadin Muzemil to Level 2", time: "10 mins ago", type: "promo" },
                 { id: "log_2", user: "Super Admin (You)", action: "Modified Level 2 evaluation criteria weighting", time: "1 hour ago", type: "config" },
                 { id: "log_3", user: "System Auto", action: "Generated monthly regional performance reports", time: "3 hours ago", type: "system" },
-                { id: "log_4", user: "Admin (Amanuel K)", action: "Assigned 5 new members to mentor Elias Tilahun", time: "5 hours ago", type: "assign" },
+                { id: "log_4", user: "Admin (Ustaz Salman A)", action: "Assigned 5 new members to mentor Ustaz Fuad Beshir", time: "5 hours ago", type: "assign" },
               ].map((log) => (
                 <div key={log.id} className="flex items-start gap-4 p-4 rounded-xl border border-black/[0.04] bg-black/[0.01]">
                   <div className="w-8 h-8 rounded-full bg-brand-teal-l text-brand-teal flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">

@@ -23,8 +23,8 @@ interface OverrideRequest {
 const mockOverrides: OverrideRequest[] = [
   {
     id: "ovr_1",
-    memberName: "Dawit Tadesse",
-    requestedBy: "Amanuel Kebede",
+    memberName: "Amir Menu",
+    requestedBy: "Ustaz Musab Ibrahim",
     role: "admin",
     overrideType: "Direct Level 2 Placement (Bypassing Min Points)",
     reason: "Prior extensive experience in regional youth association leadership.",
@@ -33,8 +33,8 @@ const mockOverrides: OverrideRequest[] = [
   },
   {
     id: "ovr_2",
-    memberName: "Yosef Mamo",
-    requestedBy: "Sarah Mohammed",
+    memberName: "Huzayfa Sultan",
+    requestedBy: "Ustaz Yunus Mohammed",
     role: "mentor",
     overrideType: "Attendance Requirement Waiver",
     reason: "Documented medical leave during Q2 workshop series.",
@@ -43,7 +43,7 @@ const mockOverrides: OverrideRequest[] = [
   },
   {
     id: "ovr_3",
-    memberName: "Hana Assefa",
+    memberName: "Maryam Ahmed",
     requestedBy: "Faysal Seifu",
     role: "super_admin",
     overrideType: "Alumni Status Reinstatement",

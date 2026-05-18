@@ -275,18 +275,18 @@ export default function NewMemberPage() {
                     onChange={handleChange}
                     options={[
                       { value: "", label: "Assign later (Unassigned)" },
-                      { value: "mentor_1", label: "Sarah Mohammed (Senior Mentor • 12/15 members)" },
-                      { value: "mentor_2", label: "Amanuel Kebede (Lead Mentor • 14/15 members)" },
-                      { value: "mentor_3", label: "Fatima Noor (Mentor • 5/10 members)" },
+                      { value: "mentor_1", label: "Ustaz Yunus Mohammed (Senior Mentor • 12/15 members)" },
+                      { value: "mentor_2", label: "Ustaz Musab Ibrahim (Lead Mentor • 14/15 members)" },
+                      { value: "mentor_3", label: "Ustaz Salman Ahmed (Mentor • 5/10 members)" },
                     ]}
                   />
                   {formData.mentorId && (
                     <div className="p-4 rounded-xl bg-brand-teal-l/30 border border-brand-teal/20 flex items-start gap-3 mt-2">
                       <div className="w-8 h-8 rounded-lg bg-brand-teal text-white flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs font-display">
-                        SM
+                        YM
                       </div>
                       <div className="flex flex-col gap-0.5">
-                        <h4 className="text-sm font-semibold text-text-primary">Sarah Mohammed</h4>
+                        <h4 className="text-sm font-semibold text-text-primary">Ustaz Yunus Mohammed</h4>
                         <p className="text-xs text-text-secondary">Assigned mentor will be notified automatically via email and platform alert upon submission.</p>
                       </div>
                     </div>

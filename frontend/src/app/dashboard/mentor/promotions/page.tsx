@@ -21,7 +21,7 @@ interface MentorPromotionStatus {
 const mockPromotions: MentorPromotionStatus[] = [
   {
     id: "p_1",
-    memberName: "Ahmed Ali",
+    memberName: "Abdi Ahmed",
     currentLevel: 2,
     targetLevel: 3,
     submittedAt: "2026-07-15T10:00:00Z",
@@ -29,7 +29,7 @@ const mockPromotions: MentorPromotionStatus[] = [
   },
   {
     id: "p_2",
-    memberName: "Sara Bekele",
+    memberName: "Abduse Taye",
     currentLevel: 1,
     targetLevel: 2,
     submittedAt: "2026-05-10T10:00:00Z",
@@ -38,7 +38,7 @@ const mockPromotions: MentorPromotionStatus[] = [
   },
   {
     id: "p_3",
-    memberName: "Yosef Mamo",
+    memberName: "Huzayfa Sultan",
     currentLevel: 1,
     targetLevel: 2,
     submittedAt: "2026-04-12T10:00:00Z",

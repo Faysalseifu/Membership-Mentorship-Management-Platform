@@ -3,11 +3,13 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useThemeStore } from "@/store/themeStore";
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useThemeStore();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,12 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleTheme = () => {
+    if (theme === "light") setTheme("dark");
+    else if (theme === "dark") setTheme("system");
+    else setTheme("light");
+  };
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -68,6 +76,23 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
           </nav>
 
           <div className="hidden md:flex items-center gap-3 shrink-0">
+            <button
+              onClick={toggleTheme}
+              className="relative text-text-secondary hover:text-text-primary transition-colors w-9 h-9 flex items-center justify-center rounded-full hover:bg-black/[0.03]"
+              aria-label="Toggle theme"
+              title={`Current theme: ${theme}`}
+            >
+              {theme === "light" && (
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              )}
+              {theme === "dark" && (
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              )}
+              {theme === "system" && (
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+              )}
+            </button>
+
             <Link
               href="/auth/login"
               className="h-10 px-5 rounded-xl border border-black/[0.08] bg-surface-1 text-text-secondary hover:text-text-primary hover:bg-black/[0.02] transition-colors text-xs font-semibold flex items-center justify-center shadow-sm"

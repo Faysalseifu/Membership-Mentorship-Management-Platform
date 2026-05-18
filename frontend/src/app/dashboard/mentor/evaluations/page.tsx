@@ -26,7 +26,7 @@ interface EvaluationRecord {
 const initialEvaluations: EvaluationRecord[] = [
   {
     id: "eval_1",
-    memberName: "Ahmed Ali",
+    memberName: "Abdi Ahmed",
     level: 2,
     date: "2026-07-15T10:00:00Z",
     attendanceScore: 90,
@@ -37,7 +37,7 @@ const initialEvaluations: EvaluationRecord[] = [
   },
   {
     id: "eval_2",
-    memberName: "Sara Bekele",
+    memberName: "Abduse Taye",
     level: 2,
     date: "2026-07-14T10:00:00Z",
     attendanceScore: 80,
@@ -48,7 +48,7 @@ const initialEvaluations: EvaluationRecord[] = [
   },
   {
     id: "eval_3",
-    memberName: "Feven Tefera",
+    memberName: "Ezadin Muzemil",
     level: 1,
     date: "2026-06-10T10:00:00Z",
     attendanceScore: 95,
@@ -66,7 +66,7 @@ export default function MentorEvaluationsPage() {
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
-    memberId: "Ahmed Ali",
+    memberId: "Abdi Ahmed",
     level: "2",
     attendanceScore: 85,
     participationScore: 80,
@@ -187,9 +187,9 @@ export default function MentorEvaluationsPage() {
             value={formData.memberId}
             onChange={handleChange}
             options={[
-              { value: "Ahmed Ali", label: "Ahmed Ali (Level 2)" },
-              { value: "Sara Bekele", label: "Sara Bekele (Level 2)" },
-              { value: "Feven Tefera", label: "Feven Tefera (Level 1)" },
+              { value: "Abdi Ahmed", label: "Abdi Ahmed (Level 2)" },
+              { value: "Abduse Taye", label: "Abduse Taye (Level 2)" },
+              { value: "Ezadin Muzemil", label: "Ezadin Muzemil (Level 1)" },
             ]}
           />
 

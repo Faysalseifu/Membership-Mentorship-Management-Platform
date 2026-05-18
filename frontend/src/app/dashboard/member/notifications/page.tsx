@@ -9,7 +9,7 @@ export default function MemberNotificationsPage() {
     {
       id: "notif_m1",
       title: "Activity Verified",
-      message: "Your mentor Sarah Mohammed verified your activity: 'Neighborhood Clean-up'.",
+      message: "Your mentor Ustaz Yunus Mohammed verified your activity: 'Neighborhood Clean-up'.",
       time: "2 hours ago",
       read: false,
       type: "success",

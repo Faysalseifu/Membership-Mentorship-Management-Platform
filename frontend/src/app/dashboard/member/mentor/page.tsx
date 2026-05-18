@@ -17,11 +17,11 @@ export default function MemberMentorPage() {
         <div className="md:col-span-1">
           <FloatCard className="flex flex-col items-center text-center gap-4 p-8">
             <div className="w-24 h-24 rounded-full bg-brand-teal text-white flex items-center justify-center text-3xl font-display font-bold shadow-md">
-              <span>SM</span>
+              <span>YM</span>
             </div>
             
             <div className="flex flex-col gap-1">
-              <h2 className="text-xl font-display font-semibold text-text-primary">Sarah Mohammed</h2>
+              <h2 className="text-xl font-display font-semibold text-text-primary">Ustaz Yunus Mohammed</h2>
               <p className="text-sm text-text-secondary">Senior Mentor</p>
             </div>
 
@@ -38,7 +38,7 @@ export default function MemberMentorPage() {
             <div className="w-full flex flex-col gap-3 mt-4 pt-4 border-t border-black/[0.04] text-left">
               <div className="flex flex-col gap-0.5">
                 <span className="text-xs text-text-muted">Email</span>
-                <span className="text-sm font-medium text-text-primary">sarah.m@msl.org</span>
+                <span className="text-sm font-medium text-text-primary">yunus.m@msl.org</span>
               </div>
               <div className="flex flex-col gap-0.5">
                 <span className="text-xs text-text-muted">Mentoring Since</span>
@@ -92,7 +92,7 @@ export default function MemberMentorPage() {
           <FloatCard className="bg-brand-teal-l/30 border-brand-teal/10">
             <h3 className="text-lg font-display font-semibold text-text-primary mb-2">Mentor Feedback</h3>
             <p className="text-sm text-text-secondary italic border-l-2 border-brand-teal pl-4 py-1">
-              "Ahmed has shown excellent dedication to the program. I've noted significant improvement in his public speaking skills during the last workshop. Keep up the great work towards Level 3!"
+              "Abdi has shown excellent dedication to the program. I've noted significant improvement in his public speaking skills during the last workshop. Keep up the great work towards Level 3!"
             </p>
           </FloatCard>
         </div>

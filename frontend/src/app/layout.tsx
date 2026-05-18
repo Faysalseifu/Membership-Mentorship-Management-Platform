@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import { ToastContainer } from "@/components/ui/Toast";
 import { NextAuthProvider } from "@/components/auth/NextAuthProvider";
+import { ThemeProviderInit } from "@/components/ui/ThemeProviderInit";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-surface-0 text-text-primary font-sans">
         <NextAuthProvider>
+          <ThemeProviderInit />
           {children}
           <ToastContainer />
         </NextAuthProvider>

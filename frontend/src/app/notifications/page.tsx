@@ -9,7 +9,7 @@ export default function GlobalNotificationsPage() {
     {
       id: "notif_1",
       title: "New Activity Logged",
-      message: "Ahmed Ali logged a new activity: 'Neighborhood Clean-up'. Requires verification.",
+      message: "Abdi Ahmed logged a new activity: 'Neighborhood Clean-up'. Requires verification.",
       time: "10 minutes ago",
       read: false,
       type: "activity",
@@ -17,7 +17,7 @@ export default function GlobalNotificationsPage() {
     {
       id: "notif_2",
       title: "Promotion Request Approved",
-      message: "Your promotion recommendation for Sara Bekele has been approved by the Admin board.",
+      message: "Your promotion recommendation for Abduse Taye has been approved by the Admin board.",
       time: "2 hours ago",
       read: false,
       type: "promotion",

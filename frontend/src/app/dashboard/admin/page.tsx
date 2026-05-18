@@ -92,7 +92,7 @@ export default function AdminDashboardPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary text-sm">Activity Verification: Community Clean-up</h4>
-                    <p className="text-xs text-text-secondary">Submitted by <span className="font-medium text-text-primary">Ahmed Ali</span> • 2 hours ago</p>
+                    <p className="text-xs text-text-secondary">Submitted by <span className="font-medium text-text-primary">Abdi Ahmed</span> • 2 hours ago</p>
                     <span className="inline-block mt-1 text-xs text-brand-amber font-medium">Requires evidence review</span>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function AdminDashboardPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary text-sm">Promotion Request: Level 2 to Level 3</h4>
-                    <p className="text-xs text-text-secondary">Submitted by <span className="font-medium text-text-primary">Sara Bekele</span> • 1 day ago</p>
+                    <p className="text-xs text-text-secondary">Submitted by <span className="font-medium text-text-primary">Abduse Taye</span> • 1 day ago</p>
                     <span className="inline-block mt-1 text-xs text-brand-teal font-medium">All checklist items completed</span>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function AdminDashboardPage() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-text-primary text-sm">Unassigned Member: Dawit Tadesse</h4>
+                    <h4 className="font-semibold text-text-primary text-sm">Unassigned Member: Amir Menu</h4>
                     <p className="text-xs text-text-secondary">Joined 3 days ago • Region: Dire Dawa</p>
                     <span className="inline-block mt-1 text-xs text-info font-medium">Needs mentor assignment</span>
                   </div>
@@ -165,10 +165,10 @@ export default function AdminDashboardPage() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-brand-teal-l text-brand-teal flex items-center justify-center font-bold text-sm">
-                    DT
+                    AM
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-text-primary group-hover:text-brand-teal transition-colors">Dawit Tadesse</h4>
+                    <h4 className="text-sm font-semibold text-text-primary group-hover:text-brand-teal transition-colors">Amir Menu</h4>
                     <p className="text-xs text-text-muted">Dire Dawa • Joined 3d ago</p>
                   </div>
                 </div>
@@ -181,10 +181,10 @@ export default function AdminDashboardPage() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-brand-teal-l text-brand-teal flex items-center justify-center font-bold text-sm">
-                    FT
+                    EM
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-text-primary group-hover:text-brand-teal transition-colors">Feven Tefera</h4>
+                    <h4 className="text-sm font-semibold text-text-primary group-hover:text-brand-teal transition-colors">Ezadin Muzemil</h4>
                     <p className="text-xs text-text-muted">Addis Ababa • Joined 5d ago</p>
                   </div>
                 </div>
@@ -200,10 +200,10 @@ export default function AdminDashboardPage() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-brand-teal-l text-brand-teal flex items-center justify-center font-bold text-sm">
-                    YM
+                    HS
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-text-primary group-hover:text-brand-teal transition-colors">Yosef Mamo</h4>
+                    <h4 className="text-sm font-semibold text-text-primary group-hover:text-brand-teal transition-colors">Huzayfa Sultan</h4>
                     <p className="text-xs text-text-muted">Hawassa • Joined 1w ago</p>
                   </div>
                 </div>

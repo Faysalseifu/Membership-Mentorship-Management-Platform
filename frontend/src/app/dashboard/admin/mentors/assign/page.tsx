@@ -13,17 +13,18 @@ export default function AssignMentorsPage() {
   const [loading, setLoading] = useState(false);
 
   const mentors = [
-    { id: "mentor_1", name: "Sarah Mohammed", email: "sarah.m@msl.org", count: 12, max: 15 },
-    { id: "mentor_2", name: "Amanuel Kebede", email: "amanuel.k@msl.org", count: 14, max: 15 },
-    { id: "mentor_3", name: "Fatima Noor", email: "fatima.n@msl.org", count: 5, max: 10 },
-    { id: "mentor_4", name: "Elias Tilahun", email: "elias.t@msl.org", count: 10, max: 10 },
+    { id: "mentor_1", name: "Ustaz Yunus Mohammed", email: "yunus.m@msl.org", count: 12, max: 15 },
+    { id: "mentor_2", name: "Ustaz Musab Ibrahim", email: "musab.i@msl.org", count: 14, max: 15 },
+    { id: "mentor_3", name: "Ustaz Salman Ahmed", email: "salman.a@msl.org", count: 5, max: 10 },
+    { id: "mentor_4", name: "Ustaz Abdulmejid Jemal", email: "abdulmejid.j@msl.org", count: 10, max: 10 },
+    { id: "mentor_5", name: "Ustaz Fuad Beshir", email: "fuad.b@msl.org", count: 8, max: 12 },
   ];
 
   const unassignedMembers = [
-    { id: "mem_101", name: "Dawit Tadesse", region: "Dire Dawa", joined: "3 days ago" },
-    { id: "mem_102", name: "Kidist Belay", region: "Addis Ababa", joined: "4 days ago" },
-    { id: "mem_103", name: "Bereket Alemu", region: "Hawassa", joined: "1 week ago" },
-    { id: "mem_104", name: "Mahlet Worku", region: "Bahir Dar", joined: "2 weeks ago" },
+    { id: "mem_101", name: "Amir Menu", region: "Dire Dawa", joined: "3 days ago" },
+    { id: "mem_102", name: "Ezadin Muzemil", region: "Addis Ababa", joined: "4 days ago" },
+    { id: "mem_103", name: "Huzayfa Sultan", region: "Hawassa", joined: "1 week ago" },
+    { id: "mem_104", name: "Faysal Seifu", region: "Bahir Dar", joined: "2 weeks ago" },
   ];
 
   const handleToggleMember = (id: string) => {

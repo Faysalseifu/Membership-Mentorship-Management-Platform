@@ -9,7 +9,7 @@ export default function MemberDashboardPage() {
   return (
     <div className="flex flex-col gap-8">
       <PageHeader
-        title="Welcome back, User"
+        title="Welcome back, Abdi Ahmed"
         description="Here is your current membership status and upcoming activities."
       />
 

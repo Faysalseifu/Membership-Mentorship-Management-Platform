@@ -55,8 +55,8 @@ export default function PublicContactPage() {
           </h2>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-            <Input label="Your Full Name" name="name" required value={formData.name} onChange={handleChange} placeholder="Ahmed Ali" />
-            <Input label="Email Address" name="email" type="email" required value={formData.email} onChange={handleChange} placeholder="ahmed@example.com" />
+            <Input label="Your Full Name" name="name" required value={formData.name} onChange={handleChange} placeholder="Abdi Ahmed" />
+            <Input label="Email Address" name="email" type="email" required value={formData.email} onChange={handleChange} placeholder="abdi@example.com" />
             <Input label="Subject / Topic" name="subject" required value={formData.subject} onChange={handleChange} placeholder="Mentorship Partnership Inquiry" />
             <Textarea label="Your Message" name="message" rows={4} required value={formData.message} onChange={handleChange} placeholder="Provide specific details regarding your inquiry..." />
 

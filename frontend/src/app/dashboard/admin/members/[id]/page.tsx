@@ -13,15 +13,15 @@ export default function AdminMemberDetailsPage({ params }: { params: { id: strin
   // Mock member details
   const member = {
     id: params.id,
-    name: "Ahmed Ali",
-    email: "ahmed.ali@example.com",
+    name: "Abdi Ahmed",
+    email: "abdi.ahmed@example.com",
     phone: "+251 911 234 567",
     gender: "male",
     region: "Addis Ababa",
     status: "active" as const,
     tier: "gold" as const,
     level: 2,
-    mentorName: "Sarah Mohammed",
+    mentorName: "Ustaz Yunus Mohammed",
     joinedAt: "2025-01-15T10:00:00Z",
     notes: "Highly active participant in regional workshops. Outstanding discipline.",
   };
@@ -44,7 +44,7 @@ export default function AdminMemberDetailsPage({ params }: { params: { id: strin
     {
       id: "ev_3",
       title: "Joined Platform",
-      description: "Assigned to Level 1 and paired with mentor Sarah Mohammed.",
+      description: "Assigned to Level 1 and paired with mentor Ustaz Yunus Mohammed.",
       date: "2025-01-15T10:00:00Z",
       color: "muted" as const,
     },
@@ -122,11 +122,11 @@ export default function AdminMemberDetailsPage({ params }: { params: { id: strin
             <h3 className="font-display font-semibold text-text-primary text-base">Assigned Mentor</h3>
             <div className="flex items-center gap-4 p-3 rounded-xl bg-black/[0.02] border border-black/[0.04]">
               <div className="w-12 h-12 rounded-full bg-brand-teal-l text-brand-teal flex items-center justify-center font-bold font-display text-base shadow-sm">
-                SM
+                YM
               </div>
               <div className="flex flex-col min-w-0 flex-1">
                 <span className="font-semibold text-text-primary truncate">{member.mentorName}</span>
-                <span className="text-xs text-text-muted truncate">sarah.m@msl.org</span>
+                <span className="text-xs text-text-muted truncate">yunus.m@msl.org</span>
               </div>
             </div>
             <button 

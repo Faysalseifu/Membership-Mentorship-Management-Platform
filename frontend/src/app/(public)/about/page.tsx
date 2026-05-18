@@ -13,9 +13,9 @@ export default function PublicAboutPage() {
 
   const leaders = [
     { name: "Faysal Seifu", role: "Executive Director & Super Admin", bio: "Leading global governance, expansion strategy, and institutional partnerships.", img: "FS" },
-    { name: "Sarah Mohammed", role: "Head of Mentorship Network", bio: "Overseeing mentor training, student pairings, and quarterly curriculum standards.", img: "SM" },
-    { name: "Amanuel Kebede", role: "Regional Operations Director", bio: "Managing branch logistics, activity verifications, and regional administrative compliance.", img: "AK" },
-    { name: "Fatima Noor", role: "Director of Community Impact", bio: "Coordinating nationwide community service initiatives, tutoring drives, and public outreach.", img: "FN" },
+    { name: "Ustaz Yunus Mohammed", role: "Head of Mentorship Network", bio: "Overseeing mentor training, student pairings, and quarterly curriculum standards.", img: "YM" },
+    { name: "Ustaz Musab Ibrahim", role: "Regional Operations Director", bio: "Managing branch logistics, activity verifications, and regional administrative compliance.", img: "MI" },
+    { name: "Ustaz Salman Ahmed", role: "Director of Community Impact", bio: "Coordinating nationwide community service initiatives, tutoring drives, and public outreach.", img: "SA" },
   ];
 
   return (

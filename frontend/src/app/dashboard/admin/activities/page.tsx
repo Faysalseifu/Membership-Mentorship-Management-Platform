@@ -26,7 +26,7 @@ const initialActivities: AdminActivity[] = [
     title: "Regional Leadership Seminar",
     type: "workshop",
     date: "2026-11-10T09:00:00Z",
-    organizer: "Sarah Mohammed",
+    organizer: "Ustaz Yunus Mohammed",
     attendanceCount: 45,
     status: "upcoming",
   },
@@ -35,7 +35,7 @@ const initialActivities: AdminActivity[] = [
     title: "Community Clean-up Drive",
     type: "community_service",
     date: "2026-10-25T08:00:00Z",
-    organizer: "Amanuel Kebede",
+    organizer: "Ustaz Musab Ibrahim",
     attendanceCount: 32,
     status: "completed",
   },
@@ -60,7 +60,7 @@ export default function AdminActivitiesPage() {
     title: "",
     type: "workshop",
     date: "",
-    organizer: "Sarah Mohammed",
+    organizer: "Ustaz Yunus Mohammed",
     description: "",
   });
 
@@ -87,7 +87,7 @@ export default function AdminActivitiesPage() {
 
     setActivities((prev) => [newAct, ...prev]);
     setIsModalOpen(false);
-    setFormData({ title: "", type: "workshop", date: "", organizer: "Sarah Mohammed", description: "" });
+    setFormData({ title: "", type: "workshop", date: "", organizer: "Ustaz Yunus Mohammed", description: "" });
 
     addToast({
       type: "success",
@@ -197,9 +197,9 @@ export default function AdminActivitiesPage() {
             value={formData.organizer}
             onChange={handleChange}
             options={[
-              { value: "Sarah Mohammed", label: "Sarah Mohammed" },
-              { value: "Amanuel Kebede", label: "Amanuel Kebede" },
-              { value: "Fatima Noor", label: "Fatima Noor" },
+              { value: "Ustaz Yunus Mohammed", label: "Ustaz Yunus Mohammed" },
+              { value: "Ustaz Musab Ibrahim", label: "Ustaz Musab Ibrahim" },
+              { value: "Ustaz Salman Ahmed", label: "Ustaz Salman Ahmed" },
             ]}
           />
           <Textarea label="Description" name="description" rows={3} value={formData.description} onChange={handleChange} placeholder="Provide an overview of the event objectives..." />

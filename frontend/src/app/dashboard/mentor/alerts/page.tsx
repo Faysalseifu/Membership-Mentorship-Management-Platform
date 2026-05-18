@@ -23,8 +23,8 @@ export default function MentorAlertsPage() {
     {
       id: "al_3",
       type: "success",
-      title: "Promotion Approved: Sara Bekele",
-      message: "The Admin board has approved your promotion recommendation for Sara Bekele to Level 2.",
+      title: "Promotion Approved: Abduse Taye",
+      message: "The Admin board has approved your promotion recommendation for Abduse Taye to Level 2.",
       date: "3 days ago",
     },
   ];

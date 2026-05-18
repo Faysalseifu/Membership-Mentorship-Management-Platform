@@ -21,8 +21,8 @@ interface SpecialMember {
 const mockSpecialMembers: SpecialMember[] = [
   {
     id: "mem_201",
-    name: "Dr. Almaz Tilahun",
-    email: "almaz.t@example.com",
+    name: "Dr. Alim Mohammed",
+    email: "alim.m@example.com",
     tier: "platinum",
     level: 3,
     endorsement: "Academic excellence and national research contribution.",
@@ -30,8 +30,8 @@ const mockSpecialMembers: SpecialMember[] = [
   },
   {
     id: "mem_202",
-    name: "Prof. Bekele Gerba",
-    email: "bekele.g@example.com",
+    name: "Prof. Kamil Ahmed",
+    email: "kamil.a@example.com",
     tier: "platinum",
     level: 3,
     endorsement: "Senior community advisory and mentorship lead.",
@@ -39,8 +39,8 @@ const mockSpecialMembers: SpecialMember[] = [
   },
   {
     id: "mem_203",
-    name: "Tewodros Assefa",
-    email: "tewodros.a@example.com",
+    name: "Huzayfa Sultan",
+    email: "huzayfa.s@example.com",
     tier: "gold",
     level: 2,
     endorsement: "Outstanding regional project leadership in Dire Dawa.",

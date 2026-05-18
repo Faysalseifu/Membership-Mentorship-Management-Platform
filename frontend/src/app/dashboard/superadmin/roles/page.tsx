@@ -19,10 +19,10 @@ interface SystemUser {
 
 const initialUsers: SystemUser[] = [
   { id: "usr_1", name: "Faysal Seifu", email: "faysal@msl.org", role: "super_admin", region: "Global" },
-  { id: "usr_2", name: "Sarah Mohammed", email: "sarah.m@msl.org", role: "mentor", region: "Addis Ababa" },
-  { id: "usr_3", name: "Amanuel Kebede", email: "amanuel.k@msl.org", role: "admin", region: "Addis Ababa" },
-  { id: "usr_4", name: "Fatima Noor", email: "fatima.n@msl.org", role: "mentor", region: "Dire Dawa" },
-  { id: "usr_5", name: "Ahmed Ali", email: "ahmed.ali@example.com", role: "member", region: "Addis Ababa" },
+  { id: "usr_2", name: "Ustaz Yunus Mohammed", email: "yunus.m@msl.org", role: "mentor", region: "Addis Ababa" },
+  { id: "usr_3", name: "Ustaz Musab Ibrahim", email: "musab.i@msl.org", role: "admin", region: "Addis Ababa" },
+  { id: "usr_4", name: "Ustaz Salman Ahmed", email: "salman.a@msl.org", role: "mentor", region: "Dire Dawa" },
+  { id: "usr_5", name: "Abdi Ahmed", email: "abdi.ahmed@example.com", role: "member", region: "Addis Ababa" },
 ];
 
 const permissionMatrix = [
