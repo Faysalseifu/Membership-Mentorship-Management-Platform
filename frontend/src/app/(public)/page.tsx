@@ -14,12 +14,12 @@ export default function PublicHomepage() {
         {/* Left Content Column */}
         <div className="flex flex-col w-full lg:w-[45%] z-10">
           <h1 className="text-[3.5rem] sm:text-[4.5rem] lg:text-[5rem] font-display font-bold text-[#1A1A24] tracking-tight leading-[1.05]">
-            Turn Clicks into <br />
-            Conversions
+            Structured Mentorship. <br />
+            <span className="text-brand-teal">Active Leadership.</span>
           </h1>
           
           <p className="text-lg text-text-secondary leading-relaxed max-w-md mt-6">
-            With MSL, master the art of online persuasion as we harness data, creativity, and technology to transform your digital engagement strategy.
+            The Muslim Students League (MSL) connects students with dedicated mentors, tracks academic progress, and builds the next generation of ethical leaders.
           </p>
           
           <div className="flex flex-wrap items-center gap-6 mt-10">
@@ -59,16 +59,16 @@ export default function PublicHomepage() {
           {/* Floating Stat Cards (Overlapping right edge) */}
           <div className="absolute -right-4 sm:-right-8 top-1/4 flex flex-col gap-4 z-30 pointer-events-none">
             <div className="bg-[#1C2333] text-white rounded-2xl p-4 shadow-xl w-40 border border-white/5 backdrop-blur-sm">
-              <div className="text-[11px] text-white/70 uppercase tracking-wide font-medium mb-1">satisfied rate</div>
+              <div className="text-[11px] text-white/70 uppercase tracking-wide font-medium mb-1">success rate</div>
               <div className="text-3xl font-display font-bold text-[#E26E43]">98%</div>
             </div>
             <div className="bg-[#1C2333] text-white rounded-2xl p-4 shadow-xl w-40 border border-white/5 backdrop-blur-sm">
-              <div className="text-[11px] text-white/70 uppercase tracking-wide font-medium mb-1">successful projects</div>
-              <div className="text-3xl font-display font-bold text-[#E26E43]">14K</div>
+              <div className="text-[11px] text-white/70 uppercase tracking-wide font-medium mb-1">completed sessions</div>
+              <div className="text-3xl font-display font-bold text-[#E26E43]">14K+</div>
             </div>
             <div className="bg-[#1C2333] text-white rounded-2xl p-4 shadow-xl w-40 border border-white/5 backdrop-blur-sm">
-              <div className="text-[11px] text-white/70 uppercase tracking-wide font-medium mb-1">clients served</div>
-              <div className="text-3xl font-display font-bold text-[#E26E43]">5,8K</div>
+              <div className="text-[11px] text-white/70 uppercase tracking-wide font-medium mb-1">hours logged</div>
+              <div className="text-3xl font-display font-bold text-[#E26E43]">12.4K</div>
             </div>
           </div>
 
@@ -90,8 +90,8 @@ export default function PublicHomepage() {
                   </div>
                 </div>
                 <div className="pb-2">
-                  <div className="text-[2.5rem] font-bold font-display leading-none mb-2">124K+</div>
-                  <div className="text-sm text-white/80 leading-snug">More than 2,000<br/>people has joined us</div>
+                  <div className="text-[2.5rem] font-bold font-display leading-none mb-2">1,120+</div>
+                  <div className="text-sm text-white/80 leading-snug">Active mentees<br/>across 6 branches</div>
                 </div>
                 
                 {/* Watch Video Circular Button */}
@@ -108,7 +108,7 @@ export default function PublicHomepage() {
               
               {/* Bottom Green Card */}
               <div className="bg-brand-teal text-white rounded-[2rem] p-6 h-[180px] flex flex-col justify-end relative shadow-lg overflow-hidden ml-4">
-                <div className="text-xl font-display font-bold leading-tight z-10 mb-2">Successful<br/>growth</div>
+                <div className="text-xl font-display font-bold leading-tight z-10 mb-2">Community<br/>impact</div>
                 
                 {/* Decorative Chart Graphic */}
                 <div className="absolute inset-0 z-0">
