@@ -3,7 +3,7 @@ import { withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
 export default withAuth(function middleware(req) {
-  const role = req.nextauth?.token?.role;
+  const role = req.nextauth?.token?.role as string;
   const path = req.nextUrl.pathname;
 
   // Protect superadmin routes
