@@ -13,6 +13,7 @@ interface NewsArticle {
   category: "announcement" | "milestone" | "curriculum";
   excerpt: string;
   featured?: boolean;
+  image: string;
 }
 
 const mockArticles: NewsArticle[] = [
@@ -25,6 +26,7 @@ const mockArticles: NewsArticle[] = [
     category: "announcement",
     excerpt: "Join over 500 students and delegates from across Ethiopia for 3 days of intensive leadership workshops, keynote lectures, and mentorship matchmaking.",
     featured: true,
+    image: "/8.png",
   },
   {
     id: "news_2",
@@ -34,6 +36,7 @@ const mockArticles: NewsArticle[] = [
     author: "Ustaz Salman Ahmed",
     category: "milestone",
     excerpt: "Our regional office in Dire Dawa has officially enrolled its 200th active student mentee, marking a historic achievement in regional expansion and youth outreach.",
+    image: "/9.png",
   },
   {
     id: "news_3",
@@ -43,6 +46,7 @@ const mockArticles: NewsArticle[] = [
     author: "Ustaz Yunus Mohammed",
     category: "curriculum",
     excerpt: "The mentorship network board has published updated guidelines for Level 3 advanced mentees, introducing specialized facilitation tracks and peer-evaluation models.",
+    image: "/10.png",
   },
   {
     id: "news_4",
@@ -52,6 +56,7 @@ const mockArticles: NewsArticle[] = [
     author: "Ustaz Musab Ibrahim",
     category: "milestone",
     excerpt: "Over 400 high school students participated in our intensive Ramadan exam preparation camps across the capital, demonstrating exceptional dedication to academic growth.",
+    image: "/11.png",
   },
 ];
 
@@ -124,8 +129,8 @@ export default function PublicNewsPage() {
             </Link>
           </div>
 
-          <div className="w-full lg:w-96 h-64 rounded-2xl bg-black/[0.03] border border-black/[0.06] flex items-center justify-center font-display font-bold text-brand-teal text-xl shadow-inner shrink-0">
-            📰 Featured Media
+          <div className="w-full lg:w-96 h-64 rounded-2xl overflow-hidden shadow-inner shrink-0">
+            <img src={featuredArticle.image} alt={featuredArticle.title} className="w-full h-full object-cover" />
           </div>
         </FloatCard>
       )}
@@ -136,8 +141,12 @@ export default function PublicNewsPage() {
           <FloatCard
             key={art.id}
             elevated
-            className="p-6 sm:p-8 flex flex-col justify-between gap-6 hover:border-brand-teal/30 transition-all group"
+            className="p-0 overflow-hidden flex flex-col justify-between hover:border-brand-teal/30 transition-all group"
           >
+            <div className="aspect-[16/10] overflow-hidden">
+              <img src={art.image} alt={art.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="p-6 sm:p-8 flex flex-col justify-between gap-6 flex-1">
             <div className="flex flex-col gap-4">
               <div className="flex items-center justify-between gap-2 text-xs">
                 <span className="px-2.5 py-1 rounded-lg bg-black/[0.04] font-semibold text-text-secondary uppercase tracking-wider">
@@ -159,6 +168,7 @@ export default function PublicNewsPage() {
                 Read Article
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </Link>
+            </div>
             </div>
           </FloatCard>
         ))}

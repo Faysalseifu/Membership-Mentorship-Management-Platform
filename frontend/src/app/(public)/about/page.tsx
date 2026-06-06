@@ -21,19 +21,25 @@ export default function PublicAboutPage() {
   return (
     <div className="flex flex-col gap-20 w-full max-w-7xl mx-auto px-6">
       {/* Mission / Vision Split Layout */}
-      <section className="flex flex-col lg:flex-row items-center gap-12 pt-8">
-        <div className="flex flex-col gap-6 flex-1">
-          <span className="text-xs font-semibold text-brand-teal uppercase tracking-wider">Our Purpose</span>
-          <h1 className="text-4xl sm:text-5xl font-display font-bold text-text-primary tracking-tight leading-[1.1]">
-            Building an Ethical, <br />
-            <span className="text-brand-teal">Empowered Generation.</span>
-          </h1>
-          <p className="text-base text-text-secondary leading-relaxed">
-            The Muslim Students League (MSL) is dedicated to fostering academic excellence, spiritual grounding, and active civic leadership among Muslim youth across Ethiopia. Through structured mentorship and community service, we bridge the gap between potential and impactful achievement.
-          </p>
+      <section className="flex flex-col gap-12 pt-8">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="w-full lg:w-[42%] rounded-[2rem] overflow-hidden shadow-lg aspect-[4/5] max-h-[520px] shrink-0">
+            <img src="/16.png" alt="MSL members at a leadership workshop" className="w-full h-full object-cover" />
+          </div>
+
+          <div className="flex flex-col gap-6 flex-1">
+            <span className="text-xs font-semibold text-brand-teal uppercase tracking-wider">Our Purpose</span>
+            <h1 className="text-4xl sm:text-5xl font-display font-bold text-text-primary tracking-tight leading-[1.1]">
+              Building an Ethical, <br />
+              <span className="text-brand-teal">Empowered Generation.</span>
+            </h1>
+            <p className="text-base text-text-secondary leading-relaxed">
+              The Muslim Students League (MSL) is dedicated to fostering academic excellence, spiritual grounding, and active civic leadership among Muslim youth across Ethiopia. Through structured mentorship and community service, we bridge the gap between potential and impactful achievement.
+            </p>
+          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-6 flex-1 w-full">
+        <div className="flex flex-col sm:flex-row gap-6 w-full">
           <FloatCard elevated className="p-8 flex flex-col gap-4 flex-1 border-t-4 border-brand-teal">
             <div className="w-12 h-12 rounded-2xl bg-brand-teal-l text-brand-teal flex items-center justify-center font-bold text-xl shadow-sm">
               🎯
@@ -65,8 +71,16 @@ export default function PublicAboutPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {leaders.map((lead, idx) => (
-            <FloatCard key={idx} elevated className="p-6 flex flex-col gap-6 hover:border-brand-teal/30 transition-all group">
-              <div className="w-20 h-20 rounded-2xl bg-brand-teal text-white flex items-center justify-center font-display font-bold text-2xl shadow-md group-hover:scale-105 transition-transform">
+            <FloatCard key={idx} elevated className="p-0 overflow-hidden flex flex-col hover:border-brand-teal/30 transition-all group">
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={["/10.png", "/11.png", "/12.png", "/17.png"][idx]}
+                  alt={lead.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6 flex flex-col gap-6 flex-1">
+              <div className="w-12 h-12 rounded-xl bg-brand-teal text-white flex items-center justify-center font-display font-bold text-sm shadow-md -mt-10 border-4 border-surface-1 relative z-10">
                 {lead.img}
               </div>
               <div className="flex flex-col gap-1">
@@ -74,6 +88,7 @@ export default function PublicAboutPage() {
                 <span className="text-xs text-brand-teal font-medium">{lead.role}</span>
               </div>
               <p className="text-xs text-text-secondary leading-relaxed pt-2 border-t border-black/[0.04]">{lead.bio}</p>
+              </div>
             </FloatCard>
           ))}
         </div>

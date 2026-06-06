@@ -13,6 +13,7 @@ interface ProjectItem {
   date: string;
   desc: string;
   fullDesc: string;
+  image: string;
 }
 
 const mockProjects: ProjectItem[] = [
@@ -23,6 +24,7 @@ const mockProjects: ProjectItem[] = [
     location: "Addis Ababa",
     impact: "500+ High School Students Tutored",
     date: "Ongoing • Since 2024",
+    image: "/1.png",
     desc: "A weekend tutoring program pairing university student mentors with local high school students in math, physics, and English.",
     fullDesc: "The Addis Ababa Youth Tutoring Initiative is one of MSL's flagship academic programs. Operating across 5 major community centers in the capital, university student volunteers provide free weekly tutoring, exam preparation sessions, and academic mentorship. The program has successfully helped over 500 students improve their national exam scores by an average of 22%.",
   },
@@ -33,6 +35,7 @@ const mockProjects: ProjectItem[] = [
     location: "Dire Dawa",
     impact: "12 Tons of Waste Cleared",
     date: "Completed • March 2026",
+    image: "/2.png",
     desc: "A massive multi-day community sanitation and tree-planting drive organized by Level 2 and Level 3 mentees.",
     fullDesc: "In partnership with the Dire Dawa municipal sanitation board, over 150 MSL mentees and mentors mobilized for a 3-day environmental restoration initiative. The team successfully cleared 12 tons of non-biodegradable waste from local riverbanks and planted 1,000 indigenous shade trees to combat urban heat island effects.",
   },
@@ -43,6 +46,7 @@ const mockProjects: ProjectItem[] = [
     location: "Oromia Regional Center",
     impact: "120 Student Leaders Trained",
     date: "Completed • Jan 2026",
+    image: "/4.png",
     desc: "An intensive 5-day retreat focusing on Islamic ethics, public speaking, conflict resolution, and project management.",
     fullDesc: "The Regional Ethics & Leadership Camp gathered top-performing Level 2 mentees for an immersive leadership training retreat. Led by certified senior mentors and guest lecturers from Addis Ababa University, the curriculum focused on ethical decision-making, effective public communication, and grassroots community organizing.",
   },
@@ -53,6 +57,7 @@ const mockProjects: ProjectItem[] = [
     location: "Amhara Regional Center",
     impact: "300+ Patients Supported",
     date: "Completed • Nov 2025",
+    image: "/13.png",
     desc: "A community welfare drive distributing care packages, medical supplies, and providing companionship to inpatients.",
     fullDesc: "MSL volunteers organized a regional hospital welfare visit, assembling and distributing care packages containing essential hygiene items, warm clothing, and nutritional supplements to over 300 pediatric and elderly patients.",
   },
@@ -102,9 +107,17 @@ export default function PublicProjectsPage() {
           <FloatCard
             key={proj.id}
             elevated
-            className="p-6 flex flex-col justify-between gap-6 hover:border-brand-teal/30 transition-all cursor-pointer group"
+            className="p-0 overflow-hidden flex flex-col justify-between hover:border-brand-teal/30 transition-all cursor-pointer group"
             onClick={() => setSelectedProject(proj)}
           >
+            <div className="aspect-[16/10] overflow-hidden">
+              <img
+                src={proj.image}
+                alt={proj.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="p-6 flex flex-col justify-between gap-6 flex-1">
             <div className="flex flex-col gap-4">
               <div className="flex items-center justify-between gap-2">
                 <span className="px-2.5 py-1 rounded-lg bg-black/[0.04] text-[10px] font-semibold text-text-secondary uppercase tracking-wider">
@@ -136,6 +149,7 @@ export default function PublicProjectsPage() {
                 View Project Details
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </button>
+            </div>
             </div>
           </FloatCard>
         ))}

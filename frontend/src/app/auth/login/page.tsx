@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FloatCard } from "@/components/ui/FloatCard";
 import { useToastStore } from "@/store/toastStore";
 
@@ -40,10 +41,49 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-surface-0 flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Decorative blurred background shapes */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-teal/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-brand-amber/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+    <div className="min-h-screen bg-surface-0 flex flex-col relative overflow-hidden">
+      {/* Navigation Header */}
+      <header className="relative z-20 bg-white/70 backdrop-blur-md border-b border-black/[0.06] shadow-sm">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 rounded-2xl bg-brand-teal text-white flex items-center justify-center font-display font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
+              M
+            </div>
+            <div className="flex flex-col">
+              <span className="font-display font-bold text-base tracking-tight text-text-primary leading-none">Muslim Students League</span>
+              <span className="text-[10px] text-text-muted font-medium uppercase tracking-wider mt-0.5">Development Center</span>
+            </div>
+          </Link>
+
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/" className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+              Home
+            </Link>
+            <Link href="/about" className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+              About
+            </Link>
+            <Link href="/programs" className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+              Programs
+            </Link>
+            <Link href="/contact" className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+              Contact
+            </Link>
+          </nav>
+
+          <Link
+            href="/join"
+            className="h-10 px-5 rounded-xl bg-brand-teal text-white hover:bg-brand-teal/90 transition-all text-xs font-semibold flex items-center justify-center shadow-sm"
+          >
+            Join Application
+          </Link>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <div className="flex-1 flex items-center justify-center p-4 relative">
+        {/* Decorative blurred background shapes */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-teal/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-brand-amber/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
       
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -113,8 +153,19 @@ export default function LoginPage() {
               )}
             </button>
           </form>
+
+          {/* Registration Link */}
+          <div className="flex items-center justify-center pt-6 border-t border-black/[0.04]">
+            <p className="text-sm text-text-secondary">
+              Don't have an account?{" "}
+              <Link href="/join" className="font-semibold text-brand-teal hover:underline">
+                Apply to join MSL
+              </Link>
+            </p>
+          </div>
         </FloatCard>
       </motion.div>
+      </div>
     </div>
   );
 }

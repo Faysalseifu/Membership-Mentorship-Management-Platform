@@ -14,6 +14,7 @@ interface ProgramEvent {
   type: "workshop" | "seminar" | "assembly" | "community";
   desc: string;
   agenda: string[];
+  image: string;
 }
 
 const mockEvents: ProgramEvent[] = [
@@ -25,6 +26,7 @@ const mockEvents: ProgramEvent[] = [
     time: "09:00 - 12:30 EAT",
     location: "Addis Ababa Main Hall & Online Stream",
     type: "workshop",
+    image: "/5.png",
     desc: "An interactive foundational workshop covering personal discipline, time management, and moral values for newly registered mentees.",
     agenda: [
       "09:00 - Registration & Opening Recitation",
@@ -41,6 +43,7 @@ const mockEvents: ProgramEvent[] = [
     time: "14:00 - 17:00 EAT",
     location: "Oromia Regional Center",
     type: "seminar",
+    image: "/6.png",
     desc: "A training seminar equipping mentees with project management tools to successfully execute local neighborhood service drives.",
     agenda: [
       "14:00 - Introduction to Grassroots Mobilization",
@@ -57,6 +60,7 @@ const mockEvents: ProgramEvent[] = [
     time: "Full Day Schedule",
     location: "Millennium Hall, Addis Ababa",
     type: "assembly",
+    image: "/7.png",
     desc: "Our annual flagship gathering featuring prominent scholars, civic leaders, and over 500 student delegates from across Ethiopia.",
     agenda: [
       "Day 1 - Institutional Vision & Keynote Addresses",
@@ -105,9 +109,17 @@ export default function PublicProgramsPage() {
             <FloatCard
               key={evt.id}
               elevated
-              className="p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:border-brand-teal/30 transition-all cursor-pointer group"
+              className="p-0 overflow-hidden flex flex-col sm:flex-row items-stretch hover:border-brand-teal/30 transition-all cursor-pointer group"
               onClick={() => setSelectedEvent(evt)}
             >
+              <div className="sm:w-48 md:w-56 shrink-0 overflow-hidden">
+                <img
+                  src={evt.image}
+                  alt={evt.title}
+                  className="w-full h-full min-h-[160px] object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 flex-1 min-w-0">
               <div className="flex flex-col gap-3 flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="px-3 py-1 rounded-lg bg-brand-teal/10 text-brand-teal text-xs font-semibold uppercase tracking-wider shadow-sm">
@@ -144,6 +156,7 @@ export default function PublicProgramsPage() {
                 View Agenda & Details
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </button>
+              </div>
             </FloatCard>
           ))}
         </div>

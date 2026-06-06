@@ -48,7 +48,6 @@ export default function PublicContactPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        {/* Contact Form */}
         <FloatCard className="p-8 sm:p-12 flex flex-col gap-8">
           <h2 className="text-2xl font-display font-bold text-text-primary border-b border-black/[0.04] pb-4">
             Send a Direct Message
@@ -74,8 +73,10 @@ export default function PublicContactPage() {
           </form>
         </FloatCard>
 
-        {/* Floating Map Card & Branch Info */}
         <div className="flex flex-col gap-8">
+          <div className="rounded-[2rem] overflow-hidden shadow-lg">
+            <img src="/17.png" alt="MSL community outreach team" className="w-full aspect-[16/10] object-cover" />
+          </div>
           <FloatCard elevated className="p-8 flex flex-col gap-6 border-t-4 border-brand-teal">
             <h3 className="text-xl font-display font-bold text-text-primary">Addis Ababa Headquarters</h3>
             <p className="text-sm text-text-secondary leading-relaxed">

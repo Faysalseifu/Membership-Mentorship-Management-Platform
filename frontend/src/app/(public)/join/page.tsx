@@ -44,7 +44,7 @@ export default function PublicJoinPage() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 w-full max-w-2xl mx-auto text-center">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] px-6 w-full max-w-2xl mx-auto text-center">
         <FloatCard elevated className="p-12 flex flex-col items-center gap-6 border-t-4 border-brand-teal">
           <div className="w-20 h-20 rounded-full bg-success/10 text-success flex items-center justify-center font-bold text-3xl shadow-sm animate-bounce">
             ✓
@@ -211,7 +211,15 @@ export default function PublicJoinPage() {
               >
                 Previous Step
               </button>
-            ) : <div />}
+            ) : (
+              <Link
+                href="/auth/login"
+                className="h-11 px-6 rounded-xl bg-surface-1 border border-black/[0.08] text-text-secondary hover:text-text-primary hover:bg-black/[0.02] transition-colors font-medium text-sm shadow-sm flex items-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Already have account?
+              </Link>
+            )}
 
             {step < 3 ? (
               <button
